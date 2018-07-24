@@ -1,0 +1,66 @@
+
+*{
+
+	padding:0px;
+	margin:0px;
+	font-family: 'Merienda', cursive;
+}
+
+
+.slant{
+
+	width: 100%;
+	height: 400px;
+	background-color: #ff336b; 
+	position: relative;
+	text-align: center;
+	margin-bottom: 150px;
+}
+
+
+h1{
+	color:white;
+	font-size: 70px;
+	margin-bottom: 20px;
+	margin-top:0px;
+	padding-top:20px;
+}
+
+.paradiv{
+
+	width: 100%;
+	height: 100px;
+
+}
+
+p{
+
+	font-size: 20px;
+	padding:60px 40px;
+	text-align: center;
+	line-height: 1.6em;  
+	
+}
+
+
+img{
+
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-top: 10px;
+
+} 
+.slantdiv{
+
+	width: 100%;
+	height: 400px;
+	background-color:#ff336b;
+	position: absolute;
+	top:0px;
+	left:0px;
+	transform: skewY(5deg);
+	transform-origin: top left;
+	z-index: -2;
+
+}
