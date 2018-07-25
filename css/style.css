@@ -1,20 +1,27 @@
 
+
 *{
 
 	padding:0px;
 	margin:0px;
 	font-family: 'Merienda', cursive;
+	 background-color: #A0A0A0; 
+	 z-index: 1;
+	 text-align: center;
+
 }
+
 
 
 .slant{
 
 	width: 100%;
-	height: 400px;
+	height: 100px;
 	background-color: #ff336b; 
 	position: relative;
 	text-align: center;
 	margin-bottom: 150px;
+	z-index: 3;
 }
 
 
@@ -30,14 +37,14 @@ h1{
 
 	width: 100%;
 	height: 100px;
+	text-align: center;
 
 }
 
 p{
 
 	font-size: 20px;
-	padding:60px 40px;
-	text-align: center;
+	padding-top: 40px;
 	line-height: 1.6em;  
 	
 }
@@ -48,19 +55,238 @@ img{
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	margin-top: 10px;
+	margin:auto;
+	margin-left: 416px;
+    margin-top: 100px;
+
 
 } 
-.slantdiv{
+.slantdiv1{
 
-	width: 100%;
-	height: 400px;
+	width: 50%;
+	height: 100px;
 	background-color:#ff336b;
 	position: absolute;
 	top:0px;
 	left:0px;
-	transform: skewY(5deg);
+	transform: skewY(8deg);
 	transform-origin: top left;
 	z-index: -2;
 
+}
+.slantdiv2{
+
+	width: 50%;
+	height: 100px;
+	background-color:#ff336b;
+	position: absolute;
+	top:0px;
+	right:0px;
+	transform: skewY(-8deg);
+	transform-origin: top right;
+	z-index: -2; 
+
+}
+
+
+
+.pages ul {
+   text-decoration: none;
+   list-style: none; 
+   float: right;
+   margin-top: 20px;
+   margin-right: 10px;
+   background-color: #ff336b;
+
+}
+
+
+.pages li{
+   padding-right: 10px;
+   display:inline-table;
+   background-color: #ff336b;
+
+   padding: 0px 25px;
+   color:#ccc;
+
+  
+
+}
+.pages li:hover{
+   padding-right: 10px;
+   display:inline-table;
+   background-color: #ff336b; 
+   transform: scale(1.5);
+  
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
+
+body {
+  background: $background;
+  color: $secondary;
+  font-family: 'Roboto', sans-serif;
+  h1 {
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+}
+
+/*- Screen Sizes*/
+/*import fonts*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+/*media queries*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #444444;
+  font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  font-size: 0.875em;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.wrapper {
+  margin: 3.125em auto;
+  padding: 1em 5em 1em;
+  max-width: 1000px;
+}
+
+h1 {
+  color: white;
+  font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  text-align: center;
+}
+
+/* - &:nth-child(1) {
+			 grid-area: entry1;
+		 }
+   - useful timesaver if there is a lengthy list
+*/
+.timeline {
+  line-height: 1.5em;
+  font-size: 14px;
+  transition: all .4s ease;
+  position: relative;
+  counter-reset: section;
+}
+.timeline:before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  background: #87ceeb;
+  position: absolute;
+  top: 0;
+  left: -3.313em;
+  border-radius: 40px 40px;
+}
+
+.timeline--entry {
+  position: relative;
+  background-color: #eeeeee;
+}
+.timeline--entry__title {
+  color: white;
+  background-color: #ec407a;
+  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 1em;
+}
+.timeline--entry__title:before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -1em;
+  border-right: 10px solid #ec407a;
+}
+.timeline--entry__detail {
+  background-color: #dddddd;
+  padding: 1em;
+  margin: 0;
+}
+.timeline--entry:before {
+  content: "";
+  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  background-color: #87ceeb;
+  border: .2em solid white;
+  border-radius: 50%;
+  position: absolute;
+  counter-increment: section;
+  content: counter(section);
+  text-shadow: 0 1px 0 #424242;
+  left: -4.5em;
+}
+
+@supports (display: grid) {
+  @media (min-width: 768px) {
+    .timeline {
+      display: grid;
+      grid-gap: 4.75em;
+      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5" "entry6 .";
+    }
+    .timeline:before {
+      left: 49.5%;
+    }
+
+    .timeline--entry:nth-child(1) {
+      grid-area: entry1;
+    }
+    .timeline--entry:nth-child(2) {
+      grid-area: entry2;
+    }
+    .timeline--entry:nth-child(3) {
+      grid-area: entry3;
+    }
+    .timeline--entry:nth-child(4) {
+      grid-area: entry4;
+    }
+    .timeline--entry:nth-child(5) {
+      grid-area: entry5;
+    }
+    .timeline--entry:nth-child(6) {
+      grid-area: entry6;
+    }
+    .timeline--entry:nth-child(7) {
+      grid-area: entry7;
+    }
+    .timeline--entry:nth-child(8) {
+      grid-area: entry8;
+    }
+    .timeline--entry:nth-child(9) {
+      grid-area: entry9;
+    }
+    .timeline--entry:nth-of-type(odd):before {
+      left: -3.8em;
+    }
+    .timeline--entry:nth-of-type(even):not(:nth-of-type(odd)) .timeline--entry__title:before {
+      left: 100%;
+      border-left: 10px solid #ec407a;
+      border-right: 0;
+    }
+    .timeline--entry:nth-of-type(even):before {
+      left: 103%;
+    }
+  }
 }
