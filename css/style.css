@@ -5,11 +5,16 @@
 	padding:0px;
 	margin:0px;
 	font-family: 'Merienda', cursive;
-	 background-color: #A0A0A0; 
+	 background: #A0A0A0; 
 	 z-index: 1;
-	 text-align: center;
+	 /* text-align: center; */
 
 }
+ body{
+
+ 	 background: #A0A0A0; 
+
+ }
 
 
 
@@ -20,7 +25,7 @@
 	background-color: #ff336b; 
 	position: relative;
 	text-align: center;
-	margin-bottom: 150px;
+	margin-bottom: 0px;
 	z-index: 3;
 }
 
@@ -50,17 +55,17 @@ p{
 }
 
 
-img{
+.slanted img{
 
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	margin:auto;
-	margin-left: 416px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin:auto;
+  margin-left: 416px;
     margin-top: 100px;
 
 
-} 
+}  */
 .slantdiv1{
 
 	width: 50%;
@@ -119,7 +124,10 @@ img{
    transform: scale(1.5);
   
 }
-
+.about_section{
+   padding-top:200px;
+   padding-left:100px;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100);
 
